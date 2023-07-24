@@ -1,0 +1,1 @@
+# yc-terraform-vm-autoscale
