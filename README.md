@@ -27,8 +27,6 @@ Terraform позволяет быстро создать облачную инф
         - `config.tpl` — описание параметров пользователя ВМ;
         - `vm-autoscale.auto.tfvars` — пользовательские данные.
 
-        В конфигурации используются [группы безопасности](https://cloud.yandex.ru/docs/vpc/concepts/security-groups), они находятся на [стадии Preview](https://cloud.yandex.ru/docs/overview/concepts/launch-stages). [Запросите в технической поддержке](https://yc.yandex-team.ru/support/create-ticket) доступ к этой функции или удалите в конфигурационном файле блоки ресурсов `yandex_vpc_security_group` и строки с параметрами `security_group_ids`.
-
     Более подробную информацию о параметрах используемых ресурсов в Terraform см. в документации провайдера:
     - [yandex_iam_service_account](https://terraform-provider.yandexcloud.net/Resources/iam_service_account)
     - [yandex_resourcemanager_folder_iam_member](https://terraform-provider.yandexcloud.net/Resources/resourcemanager_folder_iam_member)
