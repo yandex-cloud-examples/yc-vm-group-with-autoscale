@@ -18,7 +18,7 @@ Terraform позволяет быстро создать облачную инф
     1. Склонируйте репозиторий с файлами конфигурации для Terraform:
         
         ```bash
-        git clone https://github.com/yandex-cloud-examples/yc-terraform-vm-autoscale.git
+        git clone https://github.com/yandex-cloud-examples/yc-vm-group-with-autoscale.git
         ```
 
     1. Перейдите в директорию с репозиторием. В ней должны появиться файлы:
