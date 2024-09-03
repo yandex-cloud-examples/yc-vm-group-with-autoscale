@@ -1,14 +1,14 @@
-# Работа с группой виртуальных машин с автоматическим масштабированием
+# Работа с группой виртуальных машин Yandex Compute Cloud с автоматическим масштабированием
 
 С помощью представленной конфигурации для [Terraform](https://www.terraform.io/) вы развернете [группу ВМ с политикой автоматического масштабирования](https://cloud.yandex.ru/docs/compute/concepts/instance-groups/scale#auto-scale) при превышении допустимой нагрузки.
 
 ВМ будут развернуты в двух зонах доступности, а нагрузка на них будет регулироваться с помощью [сетевого балансировщика нагрузки](https://cloud.yandex.ru/docs/network-load-balancer/concepts/) Yandex Network Load Balancer.
 
-Terraform позволяет быстро создать облачную инфраструктуру в Yandex Cloud и управлять ей с помощью файлов конфигураций. В файлах конфигураций хранится описание инфраструктуры на языке HCL (HashiCorp Configuration Language). Terraform и его провайдеры распространяются под лицензией [Business Source License](https://github.com/hashicorp/terraform/blob/main/LICENSE).
-
 Подробную информацию о ресурсах провайдера смотрите в документации на сайте [Terraform](https://www.terraform.io/docs/providers/yandex/index.html) или в [зеркале](https://terraform-provider.yandexcloud.net).
 
 При изменении файлов конфигураций Terraform автоматически определяет, какая часть вашей конфигурации уже развернута, что следует добавить или удалить.
+
+Подробное практическое руководство см. на странице [Работа с группой виртуальных машин с автоматическим масштабированием](https://yandex.cloud/ru/docs/tutorials/infrastructure-management/vm-autoscale).
 
 Чтобы настроить масштабирование группы ВМ с помощью Terraform:
 
