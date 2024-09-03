@@ -1,4 +1,4 @@
-# Работа с группой виртуальных машин Yandex Compute Cloud с автоматическим масштабированием
+# Работа с группой виртуальных машин Yandex Compute Cloud с автоматическим масштабированием с помощью Network Load Balancer
 
 С помощью представленной конфигурации для [Terraform](https://www.terraform.io/) вы развернете [группу ВМ с политикой автоматического масштабирования](https://cloud.yandex.ru/docs/compute/concepts/instance-groups/scale#auto-scale) при превышении допустимой нагрузки.
 
