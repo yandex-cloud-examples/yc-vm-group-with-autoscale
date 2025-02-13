@@ -69,5 +69,5 @@ To set up scaling for your instance group using Terraform:
         ```
 
     1. Confirm the changes: type `yes` into the terminal and press **Enter**.
-1. [Test your instance group and network load balancer](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/vm-autoscale#check-service).
+1. [Test your instance group and network load balancer](https://yandex.cloud/en/docs/tutorials/infrastructure-management/vm-autoscale/#check-service).
 1. [Test auto scaling](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/vm-autoscale#check-highload).
