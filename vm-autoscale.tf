@@ -53,9 +53,9 @@ resource "yandex_vpc_subnet" "vm-autoscale-subnet-a" {
   network_id     = yandex_vpc_network.vm-autoscale-network.id
 }
 
-resource "yandex_vpc_subnet" "vm-autoscale-subnet-b" {
-  name           = "vm-autoscale-subnet-b"
-  zone           = "ru-central1-b"
+resource "yandex_vpc_subnet" "vm-autoscale-subnet-d" {
+  name           = "vm-autoscale-subnet-d"
+  zone           = "ru-central1-d"
   v4_cidr_blocks = ["192.168.2.0/24"]
   network_id     = yandex_vpc_network.vm-autoscale-network.id
 }
@@ -116,7 +116,7 @@ resource "yandex_compute_instance_group" "autoscale-group" {
       network_id = yandex_vpc_network.vm-autoscale-network.id
       subnet_ids = [
         yandex_vpc_subnet.vm-autoscale-subnet-a.id,
-        yandex_vpc_subnet.vm-autoscale-subnet-b.id
+        yandex_vpc_subnet.vm-autoscale-subnet-d.id
       ]
       security_group_ids = [ yandex_vpc_security_group.sg-1.id ]
       nat                = true
@@ -145,7 +145,7 @@ resource "yandex_compute_instance_group" "autoscale-group" {
   allocation_policy {
     zones = [
       "ru-central1-a",
-      "ru-central1-b"
+      "ru-central1-d"
     ]
   }
 
